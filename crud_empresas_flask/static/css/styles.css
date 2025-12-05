@@ -3,11 +3,12 @@
 ===================================================== */
 
 body {
-    background: radial-gradient(circle at top, #3d0066, #140021 70%);
     font-family: 'Poppins', sans-serif;
     color: #eee;
     min-height: 100vh;
     padding: 30px;
+    color: #111111; 
+    background-color: #F8F8F8;
 }
 
 /* formulario estilo espacial */
