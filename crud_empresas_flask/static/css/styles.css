@@ -1,6 +1,8 @@
+
+/* SOLUCIÓN DE CONTRASTE */
 .alerta-error {
     color: #FFFFFF; 
-    background-color: #c0392b; 
+    background-color: #c0392b;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -15,6 +17,7 @@ body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     padding: 30px;
+    /* CORRECCIÓN DE CONTRASTE: Texto muy oscuro sobre fondo muy claro */
     color: #111111; 
     background-color: #F8F8F8;
 }
@@ -71,7 +74,6 @@ body {
 label {
     font-weight: 500;
     color: #333333; 
-}
 
 .btn {
   position: relative;
