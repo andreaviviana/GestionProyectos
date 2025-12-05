@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<div class="card shadow">
+    <div class="card-header">
+        <h4>Editar Empresa</h4>
+    </div>
+
+    <div class="card-body">
+        <form action="/update/{{ empresa.id_empresa }}" method="POST">
+
+            <div class="mb-3">
+                <label>Nombre</label>
+                <input type="text" name="nombre" class="form-control" value="{{ empresa.nombre }}" required>
+            </div>
+
+            <div class="mb-3">
+                <label>Dirección</label>
+                <input type="text" name="direccion" class="form-control" value="{{ empresa.direccion }}">
+            </div>
+
+            <div class="mb-3">
+                <label>Teléfono</label>
+                <input type="number" name="telefono" class="form-control" value="{{ empresa.telefono }}">
+            </div>
+
+            <div class="mb-3">
+                <label>Correo</label>
+                <input type="email" name="correo" class="form-control" value="{{ empresa.correo }}">
+            </div>
+
+            <div class="mb-3">
+                <label>NIT</label>
+                <input type="number" name="nit" class="form-control" value="{{ empresa.nit }}">
+            </div>
+
+            <button class="btn-save-space"><i class="fa fa-save"></i> Actualizar</button>
+            <a href="/" class="btn">Cancelar</a>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

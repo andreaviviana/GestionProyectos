@@ -1,0 +1,168 @@
+/* =====================================================
+   FORMULARIO DE EMPRESAS - ESTILO ESPACIAL MORADO
+===================================================== */
+
+body {
+    background: radial-gradient(circle at top, #3d0066, #140021 70%);
+    font-family: 'Poppins', sans-serif;
+    color: #eee;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* formulario estilo espacial */
+.form-card {
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 0 22px rgba(166, 81, 255, 0.5),
+                0 0 65px rgba(120, 20, 200, 0.4);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Títulos espaciales */
+.title-space {
+    font-size: 28px;
+    text-align: center;
+    color: #07dcf8;
+    margin-bottom: 25px;
+    text-shadow: 0 0 15px #a751ff;
+}
+
+.title-space i {
+    color: #c17fff;
+    font-size: 34px;
+    margin-right: 10px;
+}
+
+/* Inputs futuristas */
+.form-control {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(193, 127, 255, 0.5);
+    color: #311457 !important;
+    border-radius: 12px;
+    padding: 12px 14px;
+    transition: 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: #c9a6ff;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: #923ecd;
+    box-shadow: 0 0 12px #b26dff;
+}
+
+/* Etiquetas espaciales */
+label {
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0 0 6px rgba(104, 9, 182, 0.782);
+}
+
+.btn {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: rgb(112, 47, 173);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+/* Botón de guardar estilo neón */
+.btn-save-space {
+    padding: 14px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #a751ff, #7e29d8);
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 0 18px rgba(166, 81, 255, 0.7);
+    transition: 0.3s ease-in-out;
+}
+
+.btn-save-space:hover {
+    background: linear-gradient(135deg, #c47aff, #9a40ff);
+    box-shadow: 0 0 25px rgba(199, 140, 255, 1),
+                0 0 40px rgba(130, 20, 230, 0.8);
+    transform: translateY(-3px);
+}
+
+/* Botón regresar */
+.btn-back-space {
+    color: #d4baff;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-back-space i {
+    margin-right: 6px;
+}
+
+.btn-back-space:hover {
+    color: #fff;
+    text-shadow: 0 0 12px #c47aff;
+}
+
+/* Línea separadora brillante */
+.separator-space {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, #d6a0ff, transparent);
+    margin: 20px 0;
+}
+
+/* Animación de fade */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}

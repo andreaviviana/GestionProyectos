@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <div class="card-header">
+<div class="card shadow">
+    <div class="card-header">
+        <h4>Detalles de la Empresa</h4>
+    </div>
+
+    <div class="card-body">
+
+        <p><strong>ID:</strong> {{ empresa.id_empresa }}</p>
+        <p><strong>Nombre:</strong> {{ empresa.nombre }}</p>
+        <p><strong>Dirección:</strong> {{ empresa.direccion }}</p>
+        <p><strong>Teléfono:</strong> {{ empresa.telefono }}</p>
+        <p><strong>Correo:</strong> {{ empresa.correo }}</p>
+        <p><strong>NIT:</strong> {{ empresa.nit }}</p>
+
+        <a href="/" class="btn-save-space">Volver</a>
+    </div>
+</div>
+{% endblock %}
