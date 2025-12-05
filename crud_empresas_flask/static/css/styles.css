@@ -1,10 +1,20 @@
+.alerta-error {
+  
+     */
+    color: #FFFFFF; 
+    background-color: #c0392b; 
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
 /* =====================================================
-   FORMULARIO DE EMPRESAS - ESTILO ESPACIAL MORADO
+    FORMULARIO DE EMPRESAS - ESTILO ESPACIAL MORADO
 ===================================================== */
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #eee;
     min-height: 100vh;
     padding: 30px;
     color: #111111; 
@@ -62,8 +72,10 @@ body {
 /* Etiquetas espaciales */
 label {
     font-weight: 500;
-    color: #ffffff;
-    text-shadow: 0 0 6px rgba(104, 9, 182, 0.782);
+    /* CORRECCIÓN DE CONTRASTE: Cambiado de #ffffff a oscuro */
+    color: #333333; 
+    /* Sombra de texto removida o ajustada, ya que el fondo es claro */
+    /* text-shadow: 0 0 6px rgba(104, 9, 182, 0.782); */
 }
 
 .btn {
@@ -165,5 +177,5 @@ label {
 /* Animación de fade */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(12px); }
-    to   { opacity: 1; transform: translateY(0); }
+    to  { opacity: 1; transform: translateY(0); }
 }
