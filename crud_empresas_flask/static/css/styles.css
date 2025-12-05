@@ -1,6 +1,4 @@
 .alerta-error {
-  
-     */
     color: #FFFFFF; 
     background-color: #c0392b; 
     padding: 15px;
@@ -72,10 +70,7 @@ body {
 /* Etiquetas espaciales */
 label {
     font-weight: 500;
-    /* CORRECCIÓN DE CONTRASTE: Cambiado de #ffffff a oscuro */
     color: #333333; 
-    /* Sombra de texto removida o ajustada, ya que el fondo es claro */
-    /* text-shadow: 0 0 6px rgba(104, 9, 182, 0.782); */
 }
 
 .btn {
@@ -116,11 +111,9 @@ label {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
-}
-
-.btn::after {
   background-color: #fff;
 }
+/* ELIMINACIÓN DEL SELECTOR DUPLICADO */
 
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
