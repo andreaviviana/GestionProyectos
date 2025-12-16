@@ -1,15 +1,8 @@
-import os # Importar el módulo OS para acceder a variables de entorno
 from flask import Flask, render_template, request, redirect, url_for, flash
 from db import init_app
 
 app = Flask(__name__)
-
-
-app.secret_key = os.getenv('SECRET_KEY')
-
-if not app.secret_key:
-    # Esta excepción asegura que la aplicación no se ejecute en producción sin una clave configurada.
-    raise RuntimeError("La variable de entorno 'SECRET_KEY' no está configurada. Por favor, establécela para la seguridad de la aplicación.")
+app.secret_key = "crud_secret_key"
 
 # Inicializar MySQL
 mysql = init_app(app)
